@@ -1,4 +1,4 @@
-.pyc
-.db
-.xlsx
+*.pyc
+*.db
+*.xlsx
 new_env/
