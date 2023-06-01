@@ -138,7 +138,7 @@ def get_total(db: Session = Depends(get_db)):
         total = round(df["Monto"].sum(), 2)
         return {"Data": f"La suma total de los pagos es: {total}"}
     except:
-        raise HTTPException(400, detail="Error in calculating toal")
+        raise HTTPException(400, detail="Error in calculating total")
 
 @app.post("/payments/")
 async def upload_payments(file: UploadFile = File(...), db: Session = Depends(get_db)):
